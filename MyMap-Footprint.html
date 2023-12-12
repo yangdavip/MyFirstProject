@@ -19,7 +19,7 @@
 	</head>
 <body>
 <!--background-color: 地图背景颜色-->
-	<div id="map" style="background-color:#353535"> </div>
+	<div id="map" style="background-color:#e5e5e5"> </div>
 </body>
 	<script>
 		$('#map').vectorMap({
@@ -40,14 +40,14 @@
 			},
 			regionStyle: {
 				initial: {
-					fill: '#e5e5e5',   // 地图颜色
+					fill: '#02D9ED',   // 地图颜色
 					"fill-opacity": 1, // 省份（州）是否隐藏,鼠标滑动时显示; 1：显示,2：隐藏。
 					stroke: 'none',
 					"stroke-width": 0,
 					"stroke-opacity": 1
 				},
 				hover: {
-					fill: '#ccc',  // 鼠标滑动至某省份的高亮颜色。
+					fill: '#028FED',  // 鼠标滑动至某省份的高亮颜色。
 					"fill-opacity": 0.8
 				},
 				selected: {
@@ -57,48 +57,47 @@
 			},
 			markerStyle: {
 		        initial: {
-		            fill: '#fd8888', // 足迹位置的填充颜色
+		            fill: '#ED4302', // 足迹位置的填充颜色
 		            stroke: '#fff'   // 足迹位置的描边颜色
 		        },
 				hover: {
-					fill: '#fd2020', // 鼠标滑动至足迹位置后的填充颜色,
+					fill: '#ED1A02', // 鼠标滑动至足迹位置后的填充颜色,
 					stroke: '#fff',  // 鼠标滑动至足迹位置后的描边颜色
 					"fill-opacity": 0.8
 				},
 		    },
       markers: [ // 足迹位置
-      
       		// {latLng: [经度（保留两位小数）, 纬度（保留两位小数）], name: '城市名称'},
       		// 推荐查询经纬度网站：http://www.gpsspg.com/maps.htm
       
-      		{latLng: [39.90,116.41], name: '北京'},
-      		{latLng: [118.77,32.04], name: '南京'},
-      		{latLng: [108.95,34.26], name: '西安'}, 
-      		{latLng: [120.62,31.30], name: '苏州'},      
-      		{latLng: [112.98,28.19], name: '长沙'},      
-      		{latLng: [123.43,41.80], name: '沈阳'},      
-      		{latLng: [117.19,39.13], name: '天津'},      
-      		{latLng: [113.67,34.76], name: '郑州'},      
-      		{latLng: [113.88,35.30], name: '新乡'},      
-      		{latLng: [116.71,39.53], name: '廊坊'},      
-      		{latLng: [115.48,38.87], name: '保定'},      
-      		{latLng: [120.37,36.09], name: '青岛'},      
-      		{latLng: [117.00,36.68], name: '济南'},      
-      		{latLng: [116.31,37.45], name: '德州'},      
-      		{latLng: [119.46,35.43], name: '日照'},      
-      		{latLng: [118.33,35.07], name: '临沂'},      
-      		{latLng: [117.13,36.19], name: '泰安'},      
-      		{latLng: [115.47,35.25], name: '菏泽'},      
-      		{latLng: [118.05,36.81], name: '淄博'},      
-      		{latLng: [107.14,34.37], name: '宝鸡'},      
-      		{latLng: [106.68,35.54], name: '平凉'},      
-      		{latLng: [109.84,40.66], name: '包头'},      
-      		{latLng: [109.99,39.82], name: '鄂尔多斯'},      
-      		{latLng: [111.67,40.82], name: '呼和浩特'},      
-      		{latLng: [116.86,38.31], name: '沧州'},     
-      		{latLng: [116.59,35.42], name: '济宁'}, 
-      		{latLng: [119.59,39.94], name: '秦皇岛'}, 
-      		{latLng: [108.71,34.33], name: '咸阳'}, 
+      		{latLng: [39.91,116.41], name: '北京'},
+      		{latLng: [32.00,118.70], name: '南京'},
+      		{latLng: [34.26,108.95], name: '西安'}, 
+      		{latLng: [31.30,120.62], name: '苏州'},      
+      		{latLng: [28.19,112.98], name: '长沙'},      
+      		{latLng: [41.80,123.43,], name: '沈阳'},      
+      		{latLng: [39.13,117.19], name: '天津'},      
+      		{latLng: [34.76,113.67], name: '郑州'},      
+      		{latLng: [35.30,113.88], name: '新乡'},      
+      		{latLng: [39.53,116.71], name: '廊坊'},      
+      		{latLng: [38.87,115.48], name: '保定'},      
+      		{latLng: [36.09,120.37], name: '青岛'},      
+      		{latLng: [36.68,117.00], name: '济南'},      
+      		{latLng: [37.45,116.31,], name: '德州'},      
+      		{latLng: [35.43,119.46], name: '日照'},      
+      		{latLng: [35.07,118.33], name: '临沂'},      
+      		{latLng: [36.19,117.13], name: '泰安'},      
+      		{latLng: [35.25,115.47], name: '菏泽'},      
+      		{latLng: [36.81,118.05], name: '淄博'},      
+      		{latLng: [34.37,107.14], name: '宝鸡'},      
+      		{latLng: [35.54,106.68], name: '平凉'},      
+      		{latLng: [40.66,109.84], name: '包头'},      
+      		{latLng: [39.82,109.99], name: '鄂尔多斯'},      
+      		{latLng: [40.82,111.67], name: '呼和浩特'},      
+      		{latLng: [38.31,116.86], name: '沧州'},     
+      		{latLng: [35.42,116.59], name: '济宁'}, 
+      		{latLng: [39.94,119.59], name: '秦皇岛'}, 
+      		{latLng: [34.33,108.71], name: '咸阳'}, 
 
       	]
 		});
